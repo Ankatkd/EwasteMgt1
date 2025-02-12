@@ -1,0 +1,156 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.App {
+  background-image: url('https://shorturl.at/xxWtO');
+  background-image: -webkit-image-set(width 80%);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: left;
+  background-color: beige;
+  width: 98.5%;
+  height: 100vh;
+}
+
+.first {
+  display: flex;
+  text-align: left;
+  opacity: 0.75;
+  justify-content: space-between;
+  align-items: center;
+  color: #ef1010;
+  background: linear-gradient(to bottom, black, white);
+  font-size: 1.5rem;
+  width: 100%;
+  height: auto;
+  padding: 10px;
+}
+
+.button {
+  background-color: #1069ef;
+  color: white;
+  font-size: large;
+  height: min-content;
+  border-radius: 5px;
+  margin-right: 20px;
+  cursor: pointer;
+  border: none;
+  padding: 8px 10px;
+  margin-left: 10px;
+}
+
+.image {
+  height: 80px;
+  margin-right: auto;
+}
+
+.tab {
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  position: absolute; 
+  top: 18%; 
+  right: 5%;
+  background-color: black;
+  color: white;
+  border-radius: 20px;
+  opacity: 0.9;
+}
+
+.tab-input {
+  padding: 8px;
+  font-size: 1rem;
+  border-radius: 5px;
+  background: gray;
+  -webkit-text-fill-color: white;
+}
+
+.tab-button {
+  background-color: #ef1010;
+  color: white;
+  font-size: large;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.link {
+  color: rgb(12, 111, 240);
+  cursor: pointer;
+}
+
+.footer {
+  width: 100%;
+  height: 15vh;
+  background-color: #423f3f;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  -webkit-text-fill-color: aliceblue;
+  font-size: 1rem;
+  position: absolute;
+  bottom: 0;
+  opacity: 0.5;
+}
+
+.navbar ul {
+  display: flex;
+  list-style: none;
+}
+
+.navbar ul li {
+  margin: 0;
+  position: relative;
+  display: inline-block;
+  justify-content: center;
+}
+
+.navbar ul li::after {
+  content: '';
+  height: 3px;
+  width: 0;
+  background: rgb(0, 51, 253);
+  position: absolute;
+  left: 0;
+  right: inherit;
+  bottom: -5px;
+  transition: 0.5s;
+}
+
+.navbar ul li:hover::after {
+  width: 85%;
+  color: aqua;
+}
+.topic {
+  position: absolute;
+  left: 50%; 
+  transform: translateX(-50%); 
+  color: rgb(44, 78, 0);
+  font-size: 2rem;
+}
+.logo {
+  height: 80px;
+  position: relative;
+}
+/* Container for login and slider */
+.slider-container {
+  width: 50%;
+  max-width: 600px;
+  margin-left: 20px;
+}
+
+/* Slider images */
+.slick-slide img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
