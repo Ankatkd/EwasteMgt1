@@ -9,7 +9,7 @@ pipeline {
         }
         stage('Read Sample File') {
             steps {
-                bat 'cat Sample.txt'
+                bat 'bat Sample.txt'
             }
         }
     }
