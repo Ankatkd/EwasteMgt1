@@ -12,5 +12,18 @@ pipeline {
                 bat 'type Sample.txt'
             }
         }
+        stage('Build') {
+            steps {
+                echo 'Simulating build process...'
+                bat 'echo Build successful!'
+            }
+        }
+        stage('Test') {
+            steps {
+                echo 'Simulating test execution...'
+                bat 'echo Running tests...'
+                bat 'echo All tests passed!'
+            }
+        }
     }
 }
